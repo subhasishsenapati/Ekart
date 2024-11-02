@@ -1,0 +1,12 @@
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\bin\Debug\net6.0\EKart.SharedKernel.deps.json
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\bin\Debug\net6.0\EKart.SharedKernel.dll
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\bin\Debug\net6.0\EKart.SharedKernel.pdb
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\EKart.SharedKernel.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\EKart.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\EKart.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\EKart.SharedKernel.AssemblyInfo.cs
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\EKart.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\EKart.SharedKernel.dll
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\refint\EKart.SharedKernel.dll
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\EKart.SharedKernel.pdb
+C:\Users\user\OneDrive\Desktop\EKart\API\EKart.API\EKart.SharedKernel\obj\Debug\net6.0\ref\EKart.SharedKernel.dll
