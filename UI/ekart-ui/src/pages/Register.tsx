@@ -14,6 +14,7 @@ import { LockOutlined } from "@mui/icons-material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { registerUserAPI } from "../api/UserAPI";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -22,6 +23,26 @@ const Register = () => {
   const [chkbox, setChkbox] = useState(false);
 
   const handleClick = () => setChkbox(!chkbox);
+
+  const registerUser = async (
+    username: string,
+    email: string,
+    password: string,
+    chkbox: boolean
+  ) => {
+    const responseAPI = await registerUserAPI(
+      username,
+      email,
+      password,
+      chkbox
+    );
+    if (responseAPI) {
+      toast.success("Registration Successful!");
+      window.location.href = "/login";
+    } else {
+      toast.error("Error in registration! Try again");
+    }
+  };
 
   return (
     <>
@@ -89,7 +110,7 @@ const Register = () => {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
               onClick={() => {
-                registerUserAPI(username, email, password, chkbox);
+                registerUser(username, email, password, chkbox);
               }}
             >
               Register

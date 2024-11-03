@@ -3,10 +3,10 @@ import axios from "axios";
 const api_url: string = "https://localhost:44313/api/User";
 
 export const registerUserAPI = async (
-  username: any,
-  emailaddress: any,
-  userpassword: any,
-  isseller: any
+  username: string,
+  emailaddress: string,
+  userpassword: string,
+  isseller: boolean
 ) => {
   const url = `${api_url}/register`;
   var command = {
@@ -17,11 +17,12 @@ export const registerUserAPI = async (
   };
   const response = await axios
     .post(url, command)
-    .then((response) => console.log(response))
     .catch((error) => console.error(error));
+
+  return response;
 };
 
-export const loginUserAPI = async (username: any, userpassword: any) => {
+export const loginUserAPI = async (username: string, userpassword: string) => {
   const url = `${api_url}/login`;
   var command = {
     userName: username,
@@ -29,6 +30,10 @@ export const loginUserAPI = async (username: any, userpassword: any) => {
   };
   const response = await axios
     .post(url, command)
-    .then((response) => console.log(response))
+    .then((response) => {
+      console.log(response);
+    })
     .catch((error) => console.error(error));
+
+  return response;
 };

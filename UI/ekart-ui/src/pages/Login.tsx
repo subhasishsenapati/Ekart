@@ -17,6 +17,17 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const loginUser = async (username: string, password: string) => {
+    const responseAPI = await loginUserAPI(username, password);
+
+    console.log(responseAPI);
+    //Idenity either buyer or seller and redirect to respective page
+    //if buyer then
+    //window.location.href = "/seller";
+    //else
+    //window.location.href = "/buyer";
+  };
+
   return (
     <>
       <Container maxWidth="xs">
@@ -65,7 +76,7 @@ const Login = () => {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
               onClick={() => {
-                loginUserAPI(username, password);
+                loginUser(username, password);
               }}
             >
               Login
