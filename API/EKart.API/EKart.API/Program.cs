@@ -51,6 +51,13 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.Get
 builder.Services.AddAutoMapper(typeof(Program), typeof(MapperProfileInfra));
 //Dependency Injection for Service classes
 builder.Services.AddTransient<IUserRepo, UserRepo>();
+//Cors
+builder.Services.AddCors(policyBuilder =>
+    policyBuilder.AddDefaultPolicy(policy =>
+        policy.WithOrigins("*")
+        .AllowAnyHeader()
+        .AllowAnyMethod())
+);
 
 var app = builder.Build();
 
@@ -62,6 +69,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 
